@@ -1,0 +1,7 @@
+ai/observe/scheduler/models/TaskType.class
+ai/observe/scheduler/models/exceptions/SchedulerException.class
+ai/observe/scheduler/models/Schedule.class
+ai/observe/scheduler/models/TaskPriority.class
+ai/observe/scheduler/models/exceptions/ExceptionResponse.class
+ai/observe/scheduler/models/exceptions/SchedulerExceptionMapper.class
+ai/observe/scheduler/models/AddTaskRequest.class

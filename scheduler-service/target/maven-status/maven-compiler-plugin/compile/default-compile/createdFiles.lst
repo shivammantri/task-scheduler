@@ -1,0 +1,8 @@
+ai/observe/scheduler/service/bootstrap/SchedulerModule.class
+ai/observe/scheduler/service/service/PollingSink.class
+ai/observe/scheduler/service/bootstrap/SchedulerConfiguration.class
+ai/observe/scheduler/service/service/TaskSchedulerService.class
+ai/observe/scheduler/service/helper/TaskTransformer.class
+ai/observe/scheduler/service/bootstrap/SchedulerApplication.class
+ai/observe/scheduler/service/service/TaskService.class
+ai/observe/scheduler/service/resource/TaskResource.class

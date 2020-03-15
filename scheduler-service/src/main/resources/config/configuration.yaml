@@ -1,0 +1,36 @@
+server:
+  maxThreads: 1024
+  applicationConnectors:
+  - type: http
+    port: 5000
+    idleTimeout: 30 seconds
+    useServerHeader: true
+    useDateHeader: true
+    idleTimeout: 30 seconds
+    acceptorThreads: 10
+    selectorThreads: 20
+  adminConnectors:
+  - type: http
+    port: 5001
+    idleTimeout: 30 seconds
+    useServerHeader: true
+    useDateHeader: true
+    idleTimeout: 30 seconds
+    acceptorThreads: 1
+    selectorThreads: 2
+
+logging:
+  level: INFO
+  loggers:
+    "org.hibernate": ERROR
+  appenders:
+    - type: console
+      logFormat: "%date %highlight(%-5level) [%thread] %cyan(%logger{10}) [%X{id}] %msg%n"
+    - type: file
+      currentLogFilename: ./scheduler.log
+      archive: true
+      archivedLogFilenamePattern: ./scheduler-%i.log.gz
+      archivedFileCount: 10
+      maxFileSize: 100MB
+      timeZone: IST
+      logFormat: "%date %level [%thread] %logger{10} [%X{id}] %msg%n\n"
